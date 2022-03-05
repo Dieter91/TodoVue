@@ -1,6 +1,6 @@
 <template>
   <ul >
-      <li v-for="(task, index) in tasks" :key="task">{{task}}  <font-awesome-icon @click="deleteTask(index)" :icon="['fas', 'trash']" class="red" />
+      <li v-for="(task, index) in tasks" :key="task">{{task}}  <font-awesome-icon @click="deleteTask(index)" :icon="['fas', 'trash']"/>
 
  </li>
   </ul>
@@ -39,6 +39,7 @@ export default {
         border: none;
         border-bottom: 1px solid gray;
         padding: 10px;
+        margin-top: 75px;
     }
     button {
         cursor: pointer;
@@ -65,9 +66,6 @@ export default {
     }
     li:nth-child(even) {
         background: white;
-        color: black;
-    }
-    .red{
         color: black;
     }
 </style>
